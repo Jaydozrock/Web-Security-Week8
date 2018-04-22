@@ -1,4 +1,3 @@
-# Web-Security-Week8
 # Project 8 - Pentesting Live Targets
 
 Time spent: **20** hours spent in total
@@ -23,7 +22,7 @@ Vulnerability #1: SQLI Attack
 
 This vunerability was investigated based on the ending of the url(.php?id=4) that was seen when a specific user was selected from under Salesperson.
 This was first tested on the Red target by entering 'x=x'which presented no response but when this was attempted on the Blue Target specifically 
-"" ' or 'x=x' "" which yielded a database query failed response which indicated the Blue target is vunerable to SQLI atatcks.
+```' or 'x=x'``` which yielded a database query failed response which indicated the Blue target is vunerable to SQLI atatcks.
 
 Vulnerability #2: Session Hijack
 
@@ -81,6 +80,8 @@ Vulnerability #2: Insecure Direct Object Reference
 
 This vunerability was investigated by changing the id index for individuals under the Salesperson list. Upon trying to change the the id index in the Green target by changing 
 the A seen in the follwing text to 10 or 11``` public/salesperson.php?id=A ``` , returned/reloaded the page that had the intial salesperson list. On the otherhand when this was attempted
+with Red target this presented two users that were not present on the Salesperson list page.
+
 
 
 ## Notes
